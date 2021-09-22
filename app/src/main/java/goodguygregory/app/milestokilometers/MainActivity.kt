@@ -12,8 +12,22 @@ class MainActivity : AppCompatActivity() {
 
 
         // assuming the user input is Kilometers
-        fun calculateMile(distanceProvided :String) {
+        fun calculateKilometers(distanceProvided :String): Double {
             // convert to double
+            distanceProvided = distanceProvided.toDouble(distanceProvided)
+            val MilesPerKM: Double = 0.62137
+            var ConvertedKM = MilesPerKM * distanceProvided
+            return ConvertedKM
+
+        }
+
+        // assumes the user input is Miles
+        fun calculateMiles(distanceProvided :String): Double {
+            // convert to double
+            distanceProvided = distanceProvided.toDouble(distanceProvided)
+            val MilesPerKM: Double = 0.62137
+            var ConvertedMiles = distanceProvided / MilesPerKM
+            return ConvertedMiles
 
         }
 

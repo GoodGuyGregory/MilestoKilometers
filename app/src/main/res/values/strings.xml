@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Miles to Kilometers</string>
+    <string name="enter_a_distance">Enter a Distance</string>
+    <string name="miles">Miles</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="distance_calculator">Distance Calculator</string>
+    <string name="convert">Convert</string>
 </resources>
